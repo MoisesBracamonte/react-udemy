@@ -1,0 +1,1 @@
+$(function(){$('.st-rang').each(function(){$(this).closest('.post').addClass('st-answer '+$(this).text().toLowerCase())})});

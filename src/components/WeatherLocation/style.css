@@ -1,0 +1,43 @@
+
+div.col.l12.name-city{
+    padding:20px;
+    color:#FFF;
+    font-size: 30px;
+}
+.boton-update{
+    margin-top: 20px;
+    background-color: #ccc;
+    color:#2d2d2d;
+    font-weight: bolder;
+}
+.boton-update:focus{
+    background-color: #b0bec5;
+    color:#232323;
+}
+.container-Wd{
+    margin-top: 20px;
+}
+div.col.container-temp{
+    padding:20px;
+    background-color: #fff;
+    box-shadow:1px 2px 4px #78909c;
+    font-size: 20px;
+}
+div.col.container-info{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow:1px 2px 4px #78909c;
+    font-size: 20px;
+}
+.wicons{
+    color:chocolate;
+    margin: 0 10px;
+}
+.container-item{
+   text-align: left;
+   margin: 3rem;
+}
+.list-day{
+    font-size: 1.5rem;
+}
