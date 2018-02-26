@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {setCity} from './actions/index';
 import logo from './logo.svg';
 import {Button,Row,Col,Navbar,NavItem,Icon} from 'react-materialize';
+import {store} from './store'; 
+
 import './App.css';
 
 /* Importamos componentes  */
@@ -22,6 +26,7 @@ class App extends Component {
 
   handleOnSelectedCity = city => {
     this.setState({ city });
+    this.props.setCity(city);
   }
   render() {
     const style={
@@ -52,4 +57,10 @@ class App extends Component {
 
 }
 App.propTypes = { cities : PropTypes.array};
-export default App;
+// Funcion para pasar los valosres de la city redux, react, connection
+const mapDispatchPropsAction = dispatch => ({
+  setCity : value => dispatch(setCity(value))
+})
+// Realizamos la conexion
+const AppConnected = connect(null, mapDispatchPropsAction)(App) 
+export default AppConnected;
